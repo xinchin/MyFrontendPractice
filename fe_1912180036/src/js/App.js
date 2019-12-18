@@ -1,6 +1,6 @@
-import $ from 'jquery'
-import Home from './Home';
-import Person from './Person';
+import $ from 'jquery';
+import Home from '../js/Home'
+import Person from '../js/Person';
 
 var p1 = new Person();
 var p2 = new Person();

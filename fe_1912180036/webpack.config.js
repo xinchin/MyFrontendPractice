@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    App: './js/App.js'
+    App: './src/js/App.js'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -14,8 +14,13 @@ module.exports = {
     new HtmlWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'My App',
-      filename: './dist/index.html',
-      template: './template.html',
+      filename: 'index-[hash:8].html',
+      template: './src/template.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Home',
+      filename: '../index.html',
+      template: './src/template.html',
     })
   ],
   module: {
