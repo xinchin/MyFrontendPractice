@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  layout: 'blog',
   middleware: 'auth'
 }
 </script>
