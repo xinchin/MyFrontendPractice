@@ -1,1 +1,11 @@
-console.log('Person.js');
+class Person {
+  constructor() {
+
+  }
+
+  greet() {
+    console.log('Person.js');
+  }
+}
+
+export default Person;

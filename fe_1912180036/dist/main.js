@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home */ \"./js/Home.js\");\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Home__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Person */ \"./js/Person.js\");\n/* harmony import */ var _Person__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Person__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./js/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home */ \"./js/Home.js\");\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Home__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Person */ \"./js/Person.js\");\n\n\nvar p1 = new _Person__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nvar p2 = new _Person__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\np1.greet();\n\n//# sourceURL=webpack:///./js/App.js?");
 
 /***/ }),
 
@@ -113,10 +113,11 @@ eval("console.log('Home');\n\n//# sourceURL=webpack:///./js/Home.js?");
 /*!**********************!*\
   !*** ./js/Person.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Person.js');\n\n//# sourceURL=webpack:///./js/Person.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Person =\n/*#__PURE__*/\nfunction () {\n  function Person() {\n    _classCallCheck(this, Person);\n  }\n\n  _createClass(Person, [{\n    key: \"greet\",\n    value: function greet() {\n      console.log('Person.js');\n    }\n  }]);\n\n  return Person;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Person);\n\n//# sourceURL=webpack:///./js/Person.js?");
 
 /***/ })
 
