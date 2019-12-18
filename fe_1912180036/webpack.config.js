@@ -10,7 +10,14 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.js'
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'My App',
+      filename: './dist/index.html',
+      template: './template.html',
+    })
+  ],
   module: {
     rules: [{
       test: /\.m?js$/,
