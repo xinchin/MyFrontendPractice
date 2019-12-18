@@ -156,3 +156,10 @@ export default {
 </style>
 ```
 
+# popper.js
+
+**Install**
+
+```
+npm install popper.js --save
+```
