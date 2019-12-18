@@ -1,9 +1,8 @@
-
 export default {
   mode: 'universal',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -16,48 +15,46 @@ export default {
     ]
   },
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '@/assets/css/styles.scss'
   ],
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
     '@/plugins/element-ui'
   ],
   /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
   ],
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     transpile: [/^element-ui/],
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
 }
