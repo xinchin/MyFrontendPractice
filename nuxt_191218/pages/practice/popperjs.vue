@@ -7,7 +7,6 @@
 <script>
 import Popper from 'popper.js';
 
-
 export default {
     mounted(){
         
