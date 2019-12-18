@@ -35,3 +35,14 @@ module: {
   ]
 }
 ```
+
+## jQuery
+
+**install**
+
+```
+npm install jquery
+```
+
+
+
