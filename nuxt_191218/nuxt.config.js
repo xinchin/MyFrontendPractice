@@ -1,5 +1,18 @@
+require('dotenv').config()
 export default {
   mode: 'universal',
+
+  env: {
+    apiUrl: process.env.API_URL || 'http://localhost:9000/api',
+    appName: process.env.APP_NAME || 'ARTCore',
+    appLocale: process.env.APP_LOCALE || 'zh-TW',
+    appDescription: '',
+    facebookAuth: !!process.env.FACEBOOK_CLIENT_ID,
+    googleAuth: !!process.env.GOOGLE_CLIENT_ID,
+    linkedinAuth: !!process.env.LINKEDIN_CLIENT_ID,
+    instagramAuth: !!process.env.INSTAGRAM_CLIENT_ID,
+  },
+
   /*
    ** Headers of the page
    */
