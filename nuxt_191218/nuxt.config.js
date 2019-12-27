@@ -42,6 +42,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '@/plugins/i18n.js',
     '@/plugins/element-ui'
   ],
   /*
@@ -72,5 +73,9 @@ export default {
   },
   router: {
     // middleware: 'auth'
+    middleware: 'i18n'
+  },
+  generate: {
+    routes: ['/', '/about', '/zh-CN', '/zh-CN/about']
   }
 }
