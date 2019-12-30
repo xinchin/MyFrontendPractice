@@ -43,7 +43,8 @@ export default {
    */
   plugins: [
     '@/plugins/i18n.js',
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/font-awesome'
   ],
   /*
    ** Nuxt.js dev-modules
@@ -55,6 +56,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-fontawesome',
   ],
   /*
    ** Axios module configuration
@@ -77,5 +79,20 @@ export default {
   },
   generate: {
     routes: ['/', '/about', '/zh-CN', '/zh-CN/about']
+  },
+  fontawesome: {
+    // icon 的標籤使用 <fa>，這邊不設定就會依照 plugin 裡的設定<font-awesome-icon>
+    component: 'fa',
+    imports: [
+      // 引入 fas 所有的icon
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
+      },
+    ]
   }
 }
