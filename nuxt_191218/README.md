@@ -572,6 +572,10 @@ export default {};
 
 [【Nuxt教學】實作引用 Fontawesome 5 到Nuxt專案 | Hello Santa web design, drupal and more](https://www.hellosanta.com.tw/blog/how-to-use-fontawesome-5-to-nuxt-project)
 
+[Font Awesome](https://fontawesome.com/)
+
+
+
 ### Installation
 
 ```
