@@ -44,7 +44,8 @@ export default {
   plugins: [
     '@/plugins/i18n.js',
     '@/plugins/element-ui',
-    '@/plugins/font-awesome'
+    '@/plugins/font-awesome',
+    '@/plugins/axios',
   ],
   /*
    ** Nuxt.js dev-modules
@@ -62,7 +63,13 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    // '/apis/': 'http://localhost:8000/',
+    // '/apis/': { target: 'http://localhost:8000', pathRewrite: { '^/apis/': '' } }
+  },
   /*
    ** Build configuration
    */
