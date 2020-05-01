@@ -344,3 +344,17 @@ export default {
 <style scoped></style>
 
 ```
+-------
+
+## dotenv
+
+### Reference
+
+[[Node.js打造API] 設定joi與config dotenv環境參數 — 1010Code](https://andy6804tw.github.io/2018/01/01/joi-config-dotenv/)
+
+[Express - RestfulAPI起手教學2 | Kenny's Blog](https://kennychen-blog.herokuapp.com/2019/08/07/Express-RestfulApi起手教學2/)
+
+
+### Installation
+
+npm install dotenv
